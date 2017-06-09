@@ -2,7 +2,7 @@
   "name": "Pokedex",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
