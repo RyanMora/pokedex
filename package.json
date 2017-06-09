@@ -2,7 +2,7 @@
   "name": "Pokedex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "directories": {
     "test": "test"
   },
@@ -23,7 +23,8 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "scripts": "^0.1.0",
-    "webpack": "^2.5.1"
+    "webpack": "^2.5.1",
+    "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "dotenv": "^4.0.0"
