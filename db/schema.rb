@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -24,9 +23,8 @@ ActiveRecord::Schema.define(version: 20161010221951) do
     t.string   "image_url",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["pokemon_id"], name: "index_items_on_pokemon_id", using: :btree
   end
-
-  add_index "items", ["pokemon_id"], name: "index_items_on_pokemon_id", using: :btree
 
   create_table "pokemons", force: :cascade do |t|
     t.string   "name",                    null: false
@@ -37,8 +35,7 @@ ActiveRecord::Schema.define(version: 20161010221951) do
     t.string   "image_url",               null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["name"], name: "index_pokemons_on_name", unique: true, using: :btree
   end
-
-  add_index "pokemons", ["name"], name: "index_pokemons_on_name", unique: true, using: :btree
 
 end
