@@ -59,3 +59,9 @@ development:
 test:
   <<: *default
   database: pokedex_test
+
+production:
+  <<: *default
+  database: "pokedex_production"
+  username: pokedex
+  password: <%= ENV['SECRET_KEY_BASE'] %>
