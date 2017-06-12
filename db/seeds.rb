@@ -16,10 +16,10 @@ def create_random_item!(pokemon)
     price: (1..100).to_a.sample,
     happiness: (1..100).to_a.sample,
     image_url: %w(
-      /assets/pokemon_berry.svg
-      /assets/pokemon_egg.svg
-      /assets/pokemon_potion.svg
-      /assets/pokemon_super_potion.svg
+      assets/pokemon_berry.svg
+      assets/pokemon_egg.svg
+      assets/pokemon_potion.svg
+      assets/pokemon_super_potion.svg
     ).sample
   )
 end
