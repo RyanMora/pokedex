@@ -23,6 +23,10 @@ default: &default
   timeout: 5000
   host: localhost
 
+production:
+  <<: *default
+  database: "pokedex_production"
+
 development:
   <<: *default
   database: pokedex_development
@@ -60,4 +64,3 @@ development:
 test:
   <<: *default
   database: pokedex_test
-
