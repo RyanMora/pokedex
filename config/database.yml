@@ -26,6 +26,8 @@ default: &default
 production:
   <<: *default
   database: "pokedex_production"
+  username: pokedex
+  password: <%= ENV['POKEDEX_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
