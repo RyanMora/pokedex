@@ -1,10 +1,30 @@
 {
-  "name": "Pokedex",
+  "name": "pokedex",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "index.js",
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
   "directories": {
+    "doc": "docs",
     "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "postinstall": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanMora/pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanMora/pokedex/issues"
   },
   "dependencies": {
     "babel-core": "^6.24.1",
@@ -23,21 +43,6 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "scripts": "^0.1.0",
-    "webpack": "^2.5.1",
-    "dotenv": "^4.0.0"
-  },
-  "devDependencies": {
-    "dotenv": "^4.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "webpack",
-    "webpack": "webpack --watch"
-  },
-  "engines": {
-    "node": "7.9.0",
-    "npm": "5.0.3"
-  },
-  "author": "",
-  "license": "ISC"
+    "webpack": "^2.5.1"
+  }
 }

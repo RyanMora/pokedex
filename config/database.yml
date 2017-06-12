@@ -21,11 +21,6 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-production:
-  <<: *default
-  database: "pokedex_production"
-  username: pokedex
-  password: <%= ENV['POKEDEX_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
@@ -64,3 +59,9 @@ development:
 test:
   <<: *default
   database: pokedex_test
+
+production:
+  <<: *default
+  database: "pokedex_production"
+  username: pokedex
+  password: <%= ENV['POKEDEX_DATABASE_PASSWORD'] %>
