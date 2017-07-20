@@ -53,6 +53,7 @@ class PokemonForm extends React.Component {
           {this.errors()}
         </ul>
         <form className="pokemon-form" onSubmit={this.handleSubmit}>
+          
             <input
               type="text"
               value={this.state.name}
